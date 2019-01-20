@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AdvertApplication
+Bundle-SymbolicName: AdvertApplication
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: AdvertApplication.jar
+Export-Package: com.yusuf.spring.controller,
+ com.yusuf.spring.pojo
+Import-Package: org.springframework.web.servlet

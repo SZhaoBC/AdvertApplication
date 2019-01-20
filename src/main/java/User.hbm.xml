@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.yusuf.spring.pojo.User" table="user">
+		<id column="id" name="id" type="long">
+			<generator class="native" />
+		</id>
+		<property column="name" name="name" type="string" />
+		<property column="password" name="password" type="string" />
+		<one-to-one name="advert" class="com.yusuf.spring.pojo.Advert"
+			cascade="save-update"></one-to-one>
+	</class>
+</hibernate-mapping>
